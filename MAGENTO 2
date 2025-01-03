@@ -126,6 +126,9 @@ bin/magento deploy:mode:show
 bin/magento setup:db-declaration:generate-patch –type=schema Vendor_Modulo NombreArchivo
 bin/magento setup:db-declaration:generate-patch –type=data Vendor_Modulo NombreArchivo
 
+# DB Schema Whitelist JSON (Asegurarse de tener antes armado el XML db_schema.xml):
+bin/magento setup:db-declaration:generate-whitelist --module-name=<Modulo>
+
 # En caso de accidente al eliminar los Role Resources del Administrator:
 En SQL:
 1* Vaciar todo en las sigueintes tablas: admin_user, authorization_role, authorization_rule
