@@ -39,21 +39,8 @@ if (!(bool)$debugMode && extension_loaded('xdebug')) {
 }
 
 * Para version 2.3.7 o superiores usar este comando al momento de instalar:
-php bin/magento setup:install \
-  --admin-firstname=Oscar \
-  --admin-lastname=Gamboa \
-  --admin-email=oscar@mail.com \
-  --admin-user=05K4R1N \
-  --admin-password=05K4R1N123 \
-  --base-url=http://127.0.0.1/proyecto/ \
-  --db-host=localhost \
-  --db-name=dbname \
-  --db-user=root \
-  --db-password=05k4r1n123 \
-  --currency=USD \
-  --timezone=America/Chicago \
-  --language=en_US \
-  --use-rewrites=1;
+bin/magento setup:install --admin-firstname=Oscar --admin-lastname=Gamboa --admin-email=oscar@mail.com --admin-user=05K4R1N --admin-password=05K4R1N123 
+--base-url=<url> --db-host=localhost --db-name=<database> --db-user=<user> --db-password=<pass> --currency=USD --timezone=America/Chicago --language=en_US --use-rewrites=1;
 
 ## XML VALIDACION
 bin/magento dev:urn-catalog:generate .idea/misc.xml
