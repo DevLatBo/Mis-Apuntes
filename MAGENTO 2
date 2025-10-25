@@ -1,5 +1,10 @@
 ## INSTALACION
 ## Dpendencias PHP
+sudo apt-get update
+sudo apt -y install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+
 sudo apt-get install php7.x php7.x-bcmath php7.x-curl php7.x-fpm php7.x-mbstring
 php7.x-gd php7.x-intl  php7.x-mysql php7.x-soap php7.x-xml php7.x-zip php7.x-common php7.x-imagick -y;
 
