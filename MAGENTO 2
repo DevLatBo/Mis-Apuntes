@@ -15,6 +15,7 @@ sudo apt install mysql-server -y;
 or
 sudo apt install mysql-server-8.0;
 
+sudo mysql
 CREATE USER ACCESS:
 mysql> CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';
