@@ -1,4 +1,4 @@
-## INSTALACION
++## INSTALACION
 ## Dpendencias PHP
 sudo apt-get update
 sudo apt -y install software-properties-common
@@ -35,6 +35,16 @@ sudo service apache2 restart;
 # lo mismo en /etc/php/7.x/fpm/pool.d/www.conf
  listen.user = my_user
  listen.group = my_group
+
+# Para cambiar de version de php (Ejemplo: 8.1 a 8.2):
+sudo update-alternatives  --config php
+sudo a2disconf php8.1-fpm
+sudo service apache2 restart
+sudo a2enconf php8.2-fpm
+sudo service apache2 restart
+sudo a2dismod php8.1
+sudo service apache2 restart
+sudo a2enmod php8.2
  
 * En caso de error del xdebug cambiar en vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/_bootstrap.php
 
